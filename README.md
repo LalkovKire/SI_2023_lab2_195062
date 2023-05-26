@@ -1,5 +1,6 @@
 # Кире Лалков 195062 
 
+# Control flow graph 
 ![CFG_195062](https://github.com/LalkovKire/SI_2023_lab2_195062/assets/103694277/0a33fcd7-75fc-4c00-a3da-46e6410a2c58)
 
 Цикломатската комплексност ја пресметав со формулата\
@@ -9,7 +10,7 @@ E - N + 2,  Edges - Nodes + 2. \
 Истото може да се заклучи и со бројот на региони кој кај мене се 11.\
 \
 \
---------------------------------------------------------\
+# Every branch 
 Every branch за да ги помине сите ребра користам 5 test cases.\
 Test - 1) Кога user = null\
 Test - 2) Кога username на user е null,емаилот содржи @ и лозинката има празно место\
@@ -60,5 +61,6 @@ Test - 5) Корисникот има соодветна лозинка и usern
 | 26 - 23.3     |             |             |             | *           |             |
 | 23.3 - 23.2   |             |             |             | *           |             |
 
-
+# Multiple condition 
+if (user==null || user.getPassword()==null || user.getEmail()==null).\
                         
