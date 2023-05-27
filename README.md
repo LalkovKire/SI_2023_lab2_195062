@@ -1,6 +1,6 @@
 # Кире Лалков 195062 
 
-# Control flow graph 
+## Control flow graph 
 ![CFG_195062](https://github.com/LalkovKire/SI_2023_lab2_195062/assets/103694277/0a33fcd7-75fc-4c00-a3da-46e6410a2c58)
 
 Цикломатската комплексност ја пресметав со формулата\
@@ -8,8 +8,8 @@ E - N + 2,  Edges - Nodes + 2. \
 Мојот CFG испадна 40 - 31 + 2 = 11.\
 Вредностите 40 и 31 ги земав од дијаграмот со select all edges and select all nodes\
 Истото може да се заклучи и со бројот на региони кој кај мене се 11.\
-\
-\
+
+
 # Every branch 
 Every branch за да ги помине сите ребра користам 5 test cases.\
 Test - 1) Кога user = null\
@@ -62,5 +62,13 @@ Test - 5) Корисникот има соодветна лозинка и usern
 | 23.3 - 23.2   |             |             |             | *           |             |
 
 # Multiple condition 
+Ги тестираме сите можни случаеви кога може да влеземе во if statement. 
 if (user==null || user.getPassword()==null || user.getEmail()==null).\
-                        
+Test case 1 - T : X : X -> user = null, password and email irrelevant\
+Test case 2 - F : T : X -> user = not null, password = null, email irrelevant\ 
+Test case 3 - F : F : T -> user = not null, password = not null, email = null\
+Test case 4 - F : F : F -> user = not null, password = not null, email = not null\
+
+
+
+
