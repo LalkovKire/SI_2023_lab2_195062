@@ -10,13 +10,15 @@ E - N + 2,  Edges - Nodes + 2. \
 Истото може да се заклучи и со бројот на региони кој кај мене се 11.\
 
 
-# Every branch 
+## Every branch 
 Every branch за да ги помине сите ребра користам 5 test cases.\
+Имаме 3 returns и 1 exception каде што кај последниот return имаме гранење така што 
+потребни се минимум барем 5 test cases.\ 
 Test - 1) Кога user = null\
-Test - 2) Кога username на user е null,емаилот содржи @ и лозинката има празно место\
+Test - 2) Кога username на user е null,емаилот е соодветен,го има во листата, но username не му e еднаков и не влева во вториот if, лозинката има празно место\
 Test - 3) Лозинката е помала од 8 карактери, username е соодветен, емаил е соодветен\
-Test - 4) Емаилот нема @ и лозинката нема специјален карактер\
-Test - 5) Корисникот има соодветна лозинка и username, валидиран\
+Test - 4) Соодветен username, емаилот нема @ и лозинката нема специјален карактер\
+Test - 5) Корисникот има соодветна лозинка, username и емаил, валидиран\
 
 | Every branch  | Test - 1    | Test - 2    | Test - 3    | Test - 4    | Test - 5    | 
 | ------------- |:-----------:|:-----------:|:-----------:|:-----------:|:-----------:|
@@ -38,7 +40,7 @@ Test - 5) Корисникот има соодветна лозинка и usern
 | 11 - 13       |             |             | *           |             | *           |
 | 12 - 13       |             | *           | *           |             |             |
 | 13 - 14       |             |             | *           |             |             |
-| 13 - 15       |             | *           |             |             | *           |
+| 13 - 15       |             | *           | *           |             | *           |
 | 14 - 15       |             |             | *           |             |             |
 | 15 - 9.3      |             | *           | *           |             | *           |
 | 9.3 - 9.2     |             | *           | *           |             | *           |
@@ -61,7 +63,7 @@ Test - 5) Корисникот има соодветна лозинка и usern
 | 26 - 23.3     |             |             |             | *           |             |
 | 23.3 - 23.2   |             |             |             | *           |             |
 
-# Multiple condition 
+## Multiple condition 
 Ги тестираме сите можни случаеви кога може да влеземе во if statement. 
 if (user==null || user.getPassword()==null || user.getEmail()==null).\
 Test case 1 - T : X : X -> user = null, password and email irrelevant\
@@ -69,6 +71,10 @@ Test case 2 - F : T : X -> user = not null, password = null, email irrelevant\
 Test case 3 - F : F : T -> user = not null, password = not null, email = null\
 Test case 4 - F : F : F -> user = not null, password = not null, email = not null\
 
+## Unit testing 
+Напишав 2 тестови соодветни за двете критериуми. Направив една празна една полна листа.
+Everybranch method беше по грубен и потежок за разлика од multiple condition. Користев 
+воглавно assertTrue and assertFalse пошто функцијата враќа boolean. 
 
 
 
