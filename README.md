@@ -67,7 +67,7 @@ Test - 5) Корисникот има соодветна лозинка, usernam
 Ги тестираме сите можни случаеви кога може да влеземе во if statement. 
 if (user==null || user.getPassword()==null || user.getEmail()==null).\
 Test case 1 - T : X : X -> user = null, password and email irrelevant.\
-Test case 2 - F : T : X -> user = not null, password = null, email irrelevant. \ 
+Test case 2 - F : T : X -> user = not null, password = null, email irrelevant.\\ 
 Test case 3 - F : F : T -> user = not null, password = not null, email = null.\
 Test case 4 - F : F : F -> user = not null, password = not null, email = not null.\
 
