@@ -1,7 +1,8 @@
 # Кире Лалков 195062 
 
 ## Control flow graph 
-![CFG_195062](https://github.com/LalkovKire/SI_2023_lab2_195062/assets/103694277/0a33fcd7-75fc-4c00-a3da-46e6410a2c58)
+![CFG_195062](https://github.com/LalkovKire/SI_2023_lab2_195062/assets/103694277/64ebc6e4-ff6a-4377-b211-96a4840fae9c)
+
 
 Цикломатската комплексност ја пресметав со формулата\
 E - N + 2,  Edges - Nodes + 2. \
